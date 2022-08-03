@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="js/jquery-1.10.2.js"></script> 
+    </head>
+    
+    <body>
+        <img class="home-img" src="images/home1.png" style="width:70vw">
+        
+        <br><br>
+        
+        <form autocomplete="off" id="login" action="j_security_check" method="post">
+	       	<input class="input-field" type="text" placeholder="USER ID" name="j_username" id="j_username" required>
+	       	<br><br>
+	        <input class="input-field" type="password" placeholder="Password" name="j_password" id="j_password" required>
+	        <br><br>
+	        <input type="submit" class="check-btn" value="Login" id="loginBtn">
+	        <br>
+	        <a id="signupSwitch">signup</a>
+	        <br><br><br>
+	        <input type="submit" class="check-btn" value="Guest Login" id="GuestLoginBtn">
+		</form>
+		
+		<form autocomplete="off" id="signup" style="display:none">
+	       	<input class="input-field" type="text" placeholder="Enter USER ID" name="j_username" id="j_usernames" required>
+	       	<br><br>
+	        <input class="input-field" type="password" placeholder="Enter Password" name="j_password" id="j_passwords" required>
+	        <br><br>
+	        <input type="button" class="check-btn" value="SignUp" id="signupBtn">
+	        <br>
+	        <a id="loginSwitch">login</a>
+	        <br><br>
+	        <p id="stmt" style="color:red"></p>
+	        <br>
+		</form>
+        
+    </body>
+    
+    <script src="js/login.js"></script>
+    
+</html>
+

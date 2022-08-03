@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Londrina+Solid|Nunito:400,300);
+
+*{
+    font-family: "Londrina Solid";
+}
+
+body{
+    background-color: #24c8ec;
+    text-align: center;
+    overflow: hidden;
+}
+.game-bg{
+    background-image: url('images/think.png'), url('images/think1.png'); 
+    background-repeat: no-repeat; 
+    background-position: right bottom,left bottom;
+    background-size: 15%,25%; 
+    background-attachment: fixed; 
+    margin-bottom: 2px;
+}
+
+.home-img{
+    width: 80vw;
+}
+
+.play-btn{
+    height: 13vw;
+    width: 21vw;
+    background-image: url("images/play-btn.png");
+    background-size: contain;
+    border: none;
+}
+
+.input-field{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    font-size: medium;
+}
+
+.level-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.level{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 10vw;
+    min-width: max-content;
+    font-size: 30px;
+    background-color: #76de76;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);;
+}
+
+.level:hover{
+    transform: scale(1.1);
+    background-color: violet;
+}
+
+.word-container{
+    display: inline-flex;
+    justify-content: center;
+    column-gap: 20px;
+    overflow: scroll;
+}
+
+.letter-container{
+    height: 60px;
+    width: 60px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgb(8, 8, 8,0.5);
+    border-radius: 5px;
+    font-size: 40px;
+    color: white;
+    border: none;
+}
+
+.guess-input{
+    height: 40px;
+    width: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: rgb(8, 8, 8,0.5);
+    border-radius: 5px;
+    font-size: 30px;
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+.check-btn{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: fit-content;
+    width:10%;
+    background-color: greenyellow;
+    border: none;
+    font-size:20px;
+    text-align: center;
+}
+
+.result-container{
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: greenyellow;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+table{
+    width: 97vw;
+    margin-left:1vw;
+    border: 1px solid gray;    
+    border-collapse: collapse;
+    line-height: 1.5;
+}
+
+tr,th,td{
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.popup{
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    z-index: 9;
+    background-color: rgb(255, 255, 255,1);
+    top:60vh;
+    left: 45vw;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.letter-box{
+    background-color: greenyellow;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 500px){
+    .level-container{
+        flex-direction: column;
+        margin-left: 19vw;
+        margin-right: auto;
+        row-gap: 10px;
+    }
+    .level{
+        width:60vw;
+    }
+    .home-img{
+        width: 100vw;
+    }
+    .play-btn{
+        height: 30vw;
+        width: 46vw;
+        background-image: url("images/play-btn.png");
+        background-size: contain;
+        border: none;
+    }
+}

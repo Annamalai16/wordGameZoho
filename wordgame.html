@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="js/jquery-1.10.2.js"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    </head>
+    
+    <body class="game-bg">
+    
+    	<p style="float:left;margin-left:1vw;font-size:25px" id="useridDisplay"><i class="fas fa-user"></i>&nbsp; </p>
+        <img class="home-img" src="images/home1.png" style="width: 30vw;margin-right:5vw">
+        
+        <br><br><br>
+        
+        <div>
+	        <div>
+	            <div style="float: left;margin-left: 3vw;">
+	                <img src="images/coins.png" style="height: 40px;">
+	                <p style="display: inline;margin-left: 10px;font-size: 40px;" id="coinsCount"></p>
+	            </div>
+	            <div style="float: right;font-size: 40px;margin-right: 3vw;">
+	                <p style="margin: 10px;" id="scoreCount"></p>
+	            </div>
+	            
+	            <div style="float: center;">
+	                <a><img src="images/clue.png" id="clueImg" style="height: 60px;border-radius: 100%;"></a>
+	            </div> 
+	        </div>
+	
+	        <div style="float: right;margin-right: 4vw;clear: both;">
+	            <img src="images/attempts.png" style="height: 40px;">
+	            <p style="display: inline;margin-left: 10px;font-size: 40px;" id="attemptCount"></p>
+	        </div> 
+        </div>
+        <br><br><br><br><br>
+        
+        <form autocomplete="off">
+            <div class="word-container" id="word-container">
+            </div>
+            <br><br><br><br>
+            <input type="button" id="guess" class="check-btn" value="Check">
+        </form>
+        <br><br>
+        <div id="otherPosition" style="display:none">
+            
+        </div>
+        <br><br> 
+    </body>
+    
+    <script src="js/wordGame.js"></script>
+</html>

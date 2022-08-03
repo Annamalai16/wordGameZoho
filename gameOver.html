@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="js/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    </head>
+    
+    <body style="background-image: url('images/success.gif');">
+        
+        <div>
+        	<div id="userCred">
+	    		<p style="float:left;margin-left:1vw;font-size:25px;background-color:#24c8ec;" id="useridDisplay"><i class="fas fa-user"></i>&nbsp; </p>
+	        	<p style="float:right;color:red;margin-right:3vw;background-color:#24c8ec;" id="logout"><i class="fas fa-sign-out-alt fa-3x"></i></p>
+        	</div>
+            <img class="home-img" src="images/home1.png" style="width: 30vw;float:center">
+            
+            <br><br>
+            <div class="result-container">
+                <p style="text-align: center;">You Found it</p>
+                <p id="word"></p>
+                <p id="score"></p>
+                <p id="attempts"></p>
+                <p id="clues"></p>
+                <p id="coins"></p>
+            </div>
+            <br>
+        </div>
+        
+        <a href="index.html"><button id="homeBtn" class="check-btn">Home</button></a>
+       
+        
+    </body>
+    
+    <script src="js/gameOver.js"></script>
+</html>
+

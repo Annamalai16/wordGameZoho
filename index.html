@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="js/jquery-1.10.2.js"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />   
+    </head>
+    
+    <body style="overflow: scroll">
+    	<div id="userCred">
+	    	<p style="float:left;margin-left:1vw;font-size:25px" id="userIdDisplay"><i class="fas fa-user"></i>&nbsp; </p>
+	        <p style="float:right;color:red;margin-right:3vw" id="logout"><i class="fas fa-sign-out-alt fa-3x"></i></p>
+        </div>
+        <img class="home-img" src="images/home1.png" style="width:55vw;">
+        
+        <br><br>
+        
+        <form autocomplete="off">
+            <input type="text" id="level" name="level" value="easy" hidden>
+            <p>Choose a level</p>
+            <br>
+            <div class="level-container">
+                <div id="easy" class="level" onclick="chooseLevel('easy')"><p>EASY</p></div>
+                <div id="medium" class="level" onclick="chooseLevel('medium')"><p>MEDIUM</p></div>
+                <div id="hard" class="level" onclick="chooseLevel('hard')"><p>HARD</p></div>
+            </div>
+            <br>
+            
+            <input type="button" class="play-btn" id="playBtn">
+        </form>
+        <br>
+        <a href="#prevScores" onclick="viewTable()" ><button id="prevScoresBtn" class="check-btn">View Previous Scores</button></a>
+        
+        <section id="prevScores">
+	        <div id="table" style="display: none;">
+	            <br><br>
+	            <table style="margin:none !important;">
+	            	<thead>
+		                <tr>
+		                    <th>S.No</th>
+		                    <th>Level</th>
+		                    <th>Word</th>
+		                    <th>Score</th>
+		                    <th>Attempts</th>
+		                    <th>Clues</th>
+		                </tr>
+		            </thead>
+		            <tbody id="tableRows">
+		            
+		            </tbody>
+	            </table>
+	            <br><br>
+	        </div> 
+        </section>
+    </body>
+    
+    <script src="js/indexScript.js"> </script>
+</html>
